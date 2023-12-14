@@ -1,0 +1,25 @@
+2023-12-14 18:37:01.104 [ INFO] [           main] c.g.s.StarterApplication                 : Starting StarterApplication using Java 17.0.9 with PID 9280 (C:\Users\Guissi\IdeaProjects\starter\target\classes started by Guissi in C:\Users\Guissi\IdeaProjects\starter)
+2023-12-14 18:37:01.117 [ INFO] [           main] c.g.s.StarterApplication                 : No active profile set, falling back to 1 default profile: "default"
+2023-12-14 18:37:02.231 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-127.0.0.1-8081"]
+2023-12-14 18:37:02.233 [ INFO] [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-14 18:37:02.234 [ INFO] [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-12-14 18:37:02.343 [ INFO] [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-14 18:37:02.728 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-127.0.0.1-8081"]
+2023-12-14 18:37:02.759 [ INFO] [           main] c.g.s.StarterApplication                 : Started StarterApplication in 2.224 seconds (process running for 3.883)
+2023-12-14 18:37:02.762 [ INFO] [           main] c.g.s.StarterApplication                 : CommandLineRunner has executed
+2023-12-14 18:37:02.765 [ INFO] [           main] c.g.s.StarterApplication                 : Configured application time out timeout 8081 
+2023-12-14 18:37:02.765 [ INFO] [           main] c.g.s.StarterApplication                 : Username: hjzeze, Password: Azer12345
+2023-12-14 18:37:02.770 [ INFO] [           main] c.g.s.StarterApplication                 : AppProperties{name='CourseTracker', ip='127.0.0.1', port=9090, security=Security{enabled=true, token='asddf998hhyqthgtYYtggghg9908jjh7ttr', roles=[USER, ADMIN]}}
+2023-12-14 18:41:12.383 [ INFO] [           main] c.g.s.StarterApplication                 : Starting StarterApplication using Java 17.0.9 with PID 16352 (C:\Users\Guissi\IdeaProjects\starter\target\classes started by Guissi in C:\Users\Guissi\IdeaProjects\starter)
+2023-12-14 18:41:12.396 [ INFO] [           main] c.g.s.StarterApplication                 : No active profile set, falling back to 1 default profile: "default"
+2023-12-14 18:41:13.580 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-127.0.0.1-8081"]
+2023-12-14 18:41:13.583 [ INFO] [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-14 18:41:13.583 [ INFO] [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-12-14 18:41:13.686 [ INFO] [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-14 18:41:14.080 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-127.0.0.1-8081"]
+2023-12-14 18:41:14.112 [ INFO] [           main] c.g.s.StarterApplication                 : Started StarterApplication in 2.266 seconds (process running for 3.864)
+2023-12-14 18:41:14.114 [ INFO] [           main] c.g.s.StarterApplication                 : CommandLineRunner has executed
+2023-12-14 18:41:14.116 [ INFO] [           main] c.g.s.StarterApplication                 : CourseTrackerApplication started successfully with Log4j2 configuration
+2023-12-14 18:41:14.118 [ INFO] [           main] c.g.s.StarterApplication                 : Configured application time out timeout 8081 
+2023-12-14 18:41:14.118 [ INFO] [           main] c.g.s.StarterApplication                 : Username: hjzeze, Password: Azer12345
+2023-12-14 18:41:14.124 [ INFO] [           main] c.g.s.StarterApplication                 : AppProperties{name='CourseTracker', ip='127.0.0.1', port=9090, security=Security{enabled=true, token='asddf998hhyqthgtYYtggghg9908jjh7ttr', roles=[USER, ADMIN]}}
