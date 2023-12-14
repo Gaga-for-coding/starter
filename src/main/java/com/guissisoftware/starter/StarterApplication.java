@@ -1,6 +1,7 @@
 package com.guissisoftware.starter;
 
 import java.util.Date;
+import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,9 +14,14 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.event.EventListener;
 import org.springframework.core.env.Environment;
 
+import com.guissisoftware.starter.model.Course;
+import com.guissisoftware.starter.model.User;
 import com.guissisoftware.starter.utils.AppProperties;
 import com.guissisoftware.starter.utils.AppService;
 import com.guissisoftware.starter.utils.DbConfiguration;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Validation;
+import jakarta.validation.Validator;
 
 @SpringBootApplication
 @EnableConfigurationProperties(AppProperties.class)
@@ -42,6 +48,36 @@ public class StarterApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		log.info("CommandLineRunner has executed");
+		Course course = new Course();
+		course.setId(1);
+		course.setRating(0);
+		Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
+		Set<ConstraintViolation<Course>> violations = validator.validate(course);
+		violations.forEach(courseConstraintViolation -> log.error("A constraint violation has occurred. Violation details: [{}].", courseConstraintViolation));
+
+		User user0 = new User("glenimal", "woloso");
+		Validator validator1 = Validation.buildDefaultValidatorFactory().getValidator();
+		Set<ConstraintViolation<User>> violations1 = validator1.validate(user0);
+
+		log.error("Password for user1 do not adhere to the password policy");
+		violations1.forEach(constraintViolation -> log.error("Violation details: [{}].", constraintViolation.getMessage()));
+
+		User user2 = new User("sbip02", "Sbip01$4UDfg");
+		Validator validator3 = Validation.buildDefaultValidatorFactory().getValidator();
+		violations1 = validator3.validate(user2);
+		if(violations1.isEmpty()) {
+			log.info("Password for user2 adhere to the password policy");
+		}
+
+		User user3 = new User("sbip03", "Sbip01$4UDfgggg");
+		violations1 = validator.validate(user3);
+		log.error("Password for user3 violates maximum repetitive rule");
+		violations1.forEach(constraintViolation -> log.error("Violation details: [{}].", constraintViolation.getMessage()));
+
+		User user4 = new User("sbip04", "Sbip014UDfgggg");
+		violations1 = validator.validate(user4);
+		log.error("Password for user4 violates special character rule");
+		violations1.forEach(constraintViolation -> log.error("Violation details: [{}].", constraintViolation.getMessage()));
+
 	}
 }

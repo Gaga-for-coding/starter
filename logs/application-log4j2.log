@@ -23,3 +23,38 @@
 2023-12-14 18:41:14.118 [ INFO] [           main] c.g.s.StarterApplication                 : Configured application time out timeout 8081 
 2023-12-14 18:41:14.118 [ INFO] [           main] c.g.s.StarterApplication                 : Username: hjzeze, Password: Azer12345
 2023-12-14 18:41:14.124 [ INFO] [           main] c.g.s.StarterApplication                 : AppProperties{name='CourseTracker', ip='127.0.0.1', port=9090, security=Security{enabled=true, token='asddf998hhyqthgtYYtggghg9908jjh7ttr', roles=[USER, ADMIN]}}
+2023-12-14 19:11:07.898 [ INFO] [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 8.0.1.Final
+2023-12-14 19:11:07.957 [ INFO] [           main] c.g.s.StarterApplication                 : Starting StarterApplication using Java 17.0.9 with PID 13932 (C:\Users\Guissi\IdeaProjects\starter\target\classes started by Guissi in C:\Users\Guissi\IdeaProjects\starter)
+2023-12-14 19:11:07.965 [ INFO] [           main] c.g.s.StarterApplication                 : No active profile set, falling back to 1 default profile: "default"
+2023-12-14 19:11:09.175 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-127.0.0.1-8081"]
+2023-12-14 19:11:09.177 [ INFO] [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-14 19:11:09.178 [ INFO] [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-12-14 19:11:09.280 [ INFO] [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-14 19:11:09.671 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-127.0.0.1-8081"]
+2023-12-14 19:11:09.700 [ INFO] [           main] c.g.s.StarterApplication                 : Started StarterApplication in 2.313 seconds (process running for 3.889)
+2023-12-14 19:11:09.763 [ERROR] [           main] c.g.s.StarterApplication                 : A constraint violation has occurred. Violation details: [ConstraintViolationImpl{interpolatedMessage='A course should have a minimum of 1 rating', propertyPath=rating, rootBeanClass=class com.guissisoftware.starter.Course, messageTemplate='A course should have a minimum of 1 rating'}].
+2023-12-14 19:11:09.765 [ INFO] [           main] c.g.s.StarterApplication                 : CourseTrackerApplication started successfully with Log4j2 configuration
+2023-12-14 19:11:09.766 [ INFO] [           main] c.g.s.StarterApplication                 : Configured application time out timeout 8081 
+2023-12-14 19:11:09.766 [ INFO] [           main] c.g.s.StarterApplication                 : Username: hjzeze, Password: Azer12345
+2023-12-14 19:11:09.771 [ INFO] [           main] c.g.s.StarterApplication                 : AppProperties{name='CourseTracker', ip='127.0.0.1', port=9090, security=Security{enabled=true, token='asddf998hhyqthgtYYtggghg9908jjh7ttr', roles=[USER, ADMIN]}}
+2023-12-14 19:55:07.235 [ INFO] [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 8.0.1.Final
+2023-12-14 19:55:07.297 [ INFO] [           main] c.g.s.StarterApplication                 : Starting StarterApplication using Java 17.0.9 with PID 7564 (C:\Users\Guissi\IdeaProjects\starter\target\classes started by Guissi in C:\Users\Guissi\IdeaProjects\starter)
+2023-12-14 19:55:07.305 [ INFO] [           main] c.g.s.StarterApplication                 : No active profile set, falling back to 1 default profile: "default"
+2023-12-14 19:55:08.500 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-127.0.0.1-8081"]
+2023-12-14 19:55:08.502 [ INFO] [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-14 19:55:08.503 [ INFO] [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-12-14 19:55:08.607 [ INFO] [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-14 19:55:08.996 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-127.0.0.1-8081"]
+2023-12-14 19:55:09.036 [ INFO] [           main] c.g.s.StarterApplication                 : Started StarterApplication in 2.317 seconds (process running for 3.877)
+2023-12-14 19:55:09.095 [ERROR] [           main] c.g.s.StarterApplication                 : A constraint violation has occurred. Violation details: [ConstraintViolationImpl{interpolatedMessage='A course should have a minimum of 1 rating', propertyPath=rating, rootBeanClass=class com.guissisoftware.starter.model.Course, messageTemplate='A course should have a minimum of 1 rating'}].
+2023-12-14 19:55:09.116 [ERROR] [           main] c.g.s.StarterApplication                 : Password for user1 do not adhere to the password policy
+2023-12-14 19:55:09.117 [ERROR] [           main] c.g.s.StarterApplication                 : Violation details: [Password do not adhere to the specified rule].
+2023-12-14 19:55:09.124 [ INFO] [           main] c.g.s.StarterApplication                 : Password for user2 adhere to the password policy
+2023-12-14 19:55:09.127 [ERROR] [           main] c.g.s.StarterApplication                 : Password for user3 violates maximum repetitive rule
+2023-12-14 19:55:09.128 [ERROR] [           main] c.g.s.StarterApplication                 : Violation details: [Password do not adhere to the specified rule].
+2023-12-14 19:55:09.129 [ERROR] [           main] c.g.s.StarterApplication                 : Password for user4 violates special character rule
+2023-12-14 19:55:09.129 [ERROR] [           main] c.g.s.StarterApplication                 : Violation details: [Password do not adhere to the specified rule].
+2023-12-14 19:55:09.130 [ INFO] [           main] c.g.s.StarterApplication                 : CourseTrackerApplication started successfully with Log4j2 configuration
+2023-12-14 19:55:09.131 [ INFO] [           main] c.g.s.StarterApplication                 : Configured application time out timeout 8081 
+2023-12-14 19:55:09.132 [ INFO] [           main] c.g.s.StarterApplication                 : Username: hjzeze, Password: Azer12345
+2023-12-14 19:55:09.136 [ INFO] [           main] c.g.s.StarterApplication                 : AppProperties{name='CourseTracker', ip='127.0.0.1', port=9090, security=Security{enabled=true, token='asddf998hhyqthgtYYtggghg9908jjh7ttr', roles=[USER, ADMIN]}}
